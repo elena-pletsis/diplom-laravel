@@ -1,0 +1,59 @@
+table.dataTable tbody td.user-name,
+table.dataTable tbody td.brand-title,
+table.dataTable tbody td.category-title,
+table.dataTable tbody td.product-title,
+table.dataTable tbody td.disc-name {
+	padding-top: 30px;
+	cursor: pointer;
+}
+
+.user-edit,
+.brand-edit,
+.category-edit,
+.product-edit,
+.disc-edit{
+	visibility: hidden;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.visible{
+	visibility: visible;
+}
+.delete,
+.delete:hover{
+	color: red;
+}
+
+.delete-product{
+	color: red;
+	margin-left: 10px;
+}
+
+td.details-control {
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+td.details-control.main-category {
+	background: none;
+	cursor: default;
+}
+tr.shown td.details-control {
+    background: url('../images/details_close.png') no-repeat center center;
+}
+
+#table td,
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable tfoot th {
+   text-align: left;   
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #a9c7c9;
+}
+
+.table > tbody > tr > td {
+     vertical-align: middle;
+}
